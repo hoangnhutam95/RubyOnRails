@@ -1,0 +1,24 @@
+<% provide(:title,"Home") %>
+<!DOCTYPE html>
+<html>
+<head>
+	<title><%= yield(:title) %> | Ruby on Ralils Tutorial Sample App</title>
+	<style>
+	.box{
+		-webkit-transition: width 2s; /* Safari */
+    	transition: width 2s;
+		border-radius:50%;
+	}
+	</style>
+</head>
+<body>
+	<h1>Welcome to Simple App</h1>
+	<p>
+		This is the home page for the
+		<a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>
+		sample application.
+	</p>
+
+<section class="box"><a>sign up now</a></section>
+</body>
+</html>
