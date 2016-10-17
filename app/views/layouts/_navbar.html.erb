@@ -22,7 +22,7 @@
         
            <li><%= link_to "Log out", logout_path, method: "delete" %> </li>      
         <% else %>
-          <li class=""><a href="/sessions/new" title="login">Login</a></li>
+          <li class=""><%= link_to"Log in",login_path%></li>
         <% end %>
 
       </ul>
