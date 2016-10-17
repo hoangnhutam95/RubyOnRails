@@ -9,6 +9,7 @@ class SessionsController < ApplicationController
   		log_in user
   		flash[:success] = "Welcome back to the Sample App!"
   		redirect_to user
+      /redirect_back_or user/
   	else
   		flash.now[:danger] = "Invalid email/password combination"
   		render 'new'
@@ -16,7 +17,7 @@ class SessionsController < ApplicationController
   end
 
   def destroy
-  		logout_user
+  		log_out
   		flash[:success] = "You are logout"
   		redirect_to root_url
   end

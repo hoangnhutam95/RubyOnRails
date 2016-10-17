@@ -1,0 +1,23 @@
+<% provide(:title,'All users')%>
+<div class="container">
+  <div class="col-sm-8 col-sm-offset-2">
+    <p id="notice"><%= notice %></p>
+
+    <h3 class="text-center">Listing Users</h3>
+    <%= page_entries_info @user %>
+    <%= will_paginate %>
+    <hr>
+    <table>
+      <tbody>
+
+        <% @users.each do |user| %>
+          <%= render user %>
+        <% end %>
+      </tbody>
+    </table>
+    <hr>
+    <%= will_paginate %>
+    <br>
+
+  </div>
+</div>
