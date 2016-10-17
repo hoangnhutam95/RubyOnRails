@@ -1,0 +1,20 @@
+<% provide(:title,"Home") %>
+<!DOCTYPE html>
+<html>
+<head>
+	<title><%= yield(:title) %> | Ruby on Ralils Tutorial Sample App</title>
+	<style>
+	</style>
+</head>
+<body>
+	<h1>Welcome to Sample App</h1>
+	<p>
+		This is the home page for the
+		<a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>
+		sample application.
+	</p>
+	<div class="text-center">
+	<a href="/users/new" title="signup" class="btn btn-primary btn-lg"> Sign Up Now! </a>
+</div>
+</body>
+</html>
